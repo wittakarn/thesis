@@ -15,5 +15,11 @@ import java.io.Serializable;
 public class Robot implements Serializable{
     private static final long serialVersionUID = 1L;
     
+    protected ActingRobot actingRobot;
     
+    public void BindActingRobot(ActingRobot robot){
+        actingRobot = robot;
+    }
+    
+    public void React(){}
 }
