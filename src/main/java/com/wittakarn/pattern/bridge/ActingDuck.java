@@ -11,5 +11,6 @@ package com.wittakarn.pattern.bridge;
  * @author Wittakarn
  */
 public interface ActingDuck {
-    public void quack(String action);
+    public String quack();
+    public String swim();
 }

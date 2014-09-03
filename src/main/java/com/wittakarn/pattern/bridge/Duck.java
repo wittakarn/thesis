@@ -15,5 +15,9 @@ import java.io.Serializable;
 public abstract class Duck implements Serializable{
     protected ActingDuck actingDuck;
     
+    protected Duck(ActingDuck actingDuck){
+        this.actingDuck = actingDuck;
+    }
     
+    public abstract void display();
 }
