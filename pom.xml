@@ -6,7 +6,7 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     
-<properties>
+    <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <my.junit.version>4.11</my.junit.version>
         <my.source-plugin.version>2.2.1</my.source-plugin.version>
