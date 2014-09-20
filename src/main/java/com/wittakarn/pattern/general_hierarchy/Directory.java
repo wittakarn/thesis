@@ -15,29 +15,22 @@ import java.util.List;
  * @author Wittakarn
  */
 public class Directory extends FileSystem implements Serializable{
-    
     private List<FileSystem> fileSystems;
-
     public Directory() {
         fileSystems = new ArrayList<FileSystem>();
     }
-
     public List<FileSystem> getFileSystems() {
         return fileSystems;
     }
-
     public void setFileSystems(List<FileSystem> fileSystems) {
         this.fileSystems = fileSystems;
     }
-    
     public void addNewDirectory(FileSystem fileSystem){
         fileSystems.add(fileSystem);
     }
-    
     public static void printAllFileSystem(Directory directory){
         Directory d;
         File f;
-        
         System.out.println("Directory: " + directory.getName() + "/" + directory.getSize());
         for (FileSystem fileSystem : directory.getFileSystems()) {
             if(fileSystem instanceof Directory){

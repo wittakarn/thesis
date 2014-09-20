@@ -12,19 +12,14 @@ import java.io.Serializable;
  * @author Wittakarn
  */
 public class WhipCreme extends CondimentDecorator implements Serializable {
-
     Coffee coffee;
-
     public WhipCreme(Coffee coffee) {
         this.coffee = coffee;
     }
-
     public String getDescription() {
         return coffee.getDescription() + ", WhipCreme";
     }
-
     public double cost() {
         return 3.13 + coffee.cost();
     }
-
 }

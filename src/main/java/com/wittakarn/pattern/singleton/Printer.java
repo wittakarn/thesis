@@ -14,8 +14,7 @@ import java.io.Serializable;
  */
 public class Printer implements Serializable{
     private String name;
-    private static Printer instance;
-    
+    private static Printer instance;    
     public static Printer getInstance(String name){
         Printer spooler = null;
         if(instance == null){
@@ -27,8 +26,7 @@ public class Printer implements Serializable{
             System.out.println("Spooler is not avaliable");
         }
         return spooler;
-    }
-    
+    }    
     public static void returnInstance(Printer spooler){
         if(instance != null && spooler.equals(instance)){
             System.out.println("Printer " + spooler.name + " is now avaliable");
@@ -37,8 +35,7 @@ public class Printer implements Serializable{
         }else{
             System.out.println("Spooler is now avaliable or passing wrong spoller");
         }
-    }
-    
+    }    
     public void print(){
         if(instance != null){
             System.out.println("Paper had been printed finish");

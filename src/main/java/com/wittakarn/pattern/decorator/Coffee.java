@@ -14,21 +14,16 @@ import java.io.Serializable;
  */
 public abstract class Coffee implements Serializable{
     protected String description;
-
     public String getDescription() {
         return description;
     }
-
     public void setDescription(String description) {
         this.description = description;
     }
-
     public Coffee() {
     }
-
     public Coffee(String description) {
         this.description = description;
     }
-    
     public abstract double cost();
 }

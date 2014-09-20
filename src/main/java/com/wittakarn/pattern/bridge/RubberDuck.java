@@ -13,15 +13,12 @@ import java.io.Serializable;
  * @author Wittakarn
  */
 public class RubberDuck implements ActingDuck, Serializable{
-
     @Override
     public String quack() {
         return "Rubber duck say nothing";
     }
-
     @Override
     public String swim() {
         return "Rubber duck is drowning";
     }
-    
 }

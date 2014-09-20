@@ -13,15 +13,12 @@ import java.io.Serializable;
  * @author Wittakarn
  */
 public class RedheadDuck implements ActingDuck, Serializable{
-
     @Override
     public String quack() {
         return "Redhead duck quack";
     }
-
     @Override
     public String swim() {
         return "Redhead duck swim";
     }
-    
 }

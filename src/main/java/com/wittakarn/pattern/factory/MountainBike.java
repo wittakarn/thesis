@@ -13,10 +13,8 @@ import java.io.Serializable;
  * @author Wittakarn
  */
 public class MountainBike implements Bicycle, Serializable{
-
     @Override
     public void printDescription() {
         System.out.println("Description of MountainBike");
     }
-    
 }

@@ -10,11 +10,9 @@ package com.wittakarn.pattern.bridge;
  * @author Wittakarn
  */
 public class App {
-
     public static void main(String[] args) {
         Duck[] ducks = new Duck[]{new SimulatorDuck(new RedheadDuck()), 
-                                    new SimulatorDuck(new RubberDuck())};
-        
+                                    new SimulatorDuck(new RubberDuck())};        
         for (Duck duck : ducks) {
             duck.display();
         }

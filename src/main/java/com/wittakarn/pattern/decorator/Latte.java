@@ -13,13 +13,10 @@ import java.io.Serializable;
  * @author Wittakarn
  */
 public class Latte extends Coffee implements Serializable{
-
     public Latte() {
         description = "Latte";
     }
-
     public double cost() {
         return 65;
     }
-    
 }
